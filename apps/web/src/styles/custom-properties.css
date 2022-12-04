@@ -27,3 +27,15 @@
   --font-title1-size: calc(49 / var(--unit) * 1rem); /* 49px */
   --font-title1-line-height: calc(57 / 49); /* 57px */
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-black: #fff;
+    --color-dark-gray: #32373e;
+    --color-gray: #a0b9da;
+    --color-light-gray: #363636;
+    --color-very-light-gray: #191a1c;
+    --color-white: #202123;
+    --color-accent: #156dff;
+  }
+}
