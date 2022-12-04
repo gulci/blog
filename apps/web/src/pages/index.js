@@ -89,7 +89,7 @@ const IndexPage = (props) => {
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
       <Container>
         <h1 hidden>welcome to {site.title}</h1>
-        {postNodes && <BlogPostPreviewList title="Latest blog posts" nodes={postNodes} browseMoreHref="/archive/" />}
+        {postNodes && <BlogPostPreviewList title="latest blog posts" nodes={postNodes} browseMoreHref="/archive/" />}
       </Container>
     </Layout>
   )
