@@ -36,7 +36,7 @@ function BlogPostPreview(props) {
             <PortableText blocks={props._rawExcerpt} />
           </div>
         )}
-        <div className={styles.date}>{format(new Date(props.publishedAt), 'MMMM Mo, yyyy')}</div>
+        <div className={styles.date}>{format(new Date(props.publishedAt), 'MMMM do, yyyy')}</div>
       </div>
     </Link>
   )
