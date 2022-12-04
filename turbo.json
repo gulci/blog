@@ -1,0 +1,27 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"]
+    },
+    "graphql-deploy": {
+      "inputs": ["schemas/**/*.js", "schemas/**/*.ts"],
+      "outputs": []
+    },
+    "studio#build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"]
+    },
+    "web#build": {
+      "dependsOn": ["^build"],
+      "env": ["NODE_ENV", "SANITY_DATASET", "SANITY_PROJECT_ID", "SANITY_READ_TOKEN"],
+      "outputs": ["cache/**", "public/**"]
+    },
+    "lint": {
+      "outputs": []
+    },
+    "dev": {
+      "cache": false
+    }
+  }
+}
