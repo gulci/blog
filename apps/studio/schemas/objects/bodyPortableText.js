@@ -1,3 +1,6 @@
+import { SUPPORTED_LANGUAGES } from '@sanity/code-input/lib/config'
+import 'ace-builds/src-noconflict/mode-toml'
+
 const bodyPortableText = {
   name: 'bodyPortableText',
   type: 'array',
@@ -29,6 +32,7 @@ const bodyPortableText = {
         decorators: [
           { title: 'Strong', value: 'strong' },
           { title: 'Emphasis', value: 'em' },
+          { title: 'Code', value: 'code' },
         ],
         // Annotations can be any object structure – e.g. a link or a footnote.
         annotations: [
@@ -54,6 +58,19 @@ const bodyPortableText = {
     {
       type: 'mainImage',
       options: { hotspot: true },
+    },
+    {
+      type: 'code',
+      options: {
+        languageAlternatives: [
+          ...SUPPORTED_LANGUAGES,
+          {
+            title: 'TOML',
+            value: 'toml',
+            mode: 'toml',
+          },
+        ],
+      },
     },
   ],
 }

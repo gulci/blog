@@ -10,9 +10,9 @@
     "@sanity/default-login",
     "@sanity/dashboard",
     "@sanity/desk-tool",
+    "@sanity/code-input",
     "dashboard-widget-structure-menu",
-    "dashboard-widget-document-list",
-    "dashboard-widget-netlify"
+    "dashboard-widget-document-list"
   ],
   "env": {
     "development": {
