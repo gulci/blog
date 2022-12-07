@@ -5,7 +5,7 @@ import { MdDescription, MdLocalOffer, MdPerson } from 'react-icons/md'
 import IframePreview from '../previews/IframePreview'
 
 // Web preview configuration
-const remoteURL = '<#<deployments.web.url>#>'
+const remoteURL = 'https://gulci.codes'
 const localURL = 'http://localhost:8000'
 const previewURL = window.location.hostname === 'localhost' ? localURL : remoteURL
 
