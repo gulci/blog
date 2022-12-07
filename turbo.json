@@ -17,6 +17,7 @@
       "env": ["NODE_ENV", "SANITY_DATASET", "SANITY_PROJECT_ID", "SANITY_READ_TOKEN"],
       "outputs": ["cache/**", "public/**"]
     },
+    "format": {},
     "lint": {
       "outputs": []
     },

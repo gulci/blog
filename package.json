@@ -11,12 +11,11 @@
     "dev": "turbo run dev --parallel",
     "graphql-deploy": "turbo run graphql-deploy",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json}\""
+    "format": "turbo run format"
   },
   "devDependencies": {
-    "@trivago/prettier-plugin-sort-imports": "^4.0.0",
     "eslint-config-custom": "*",
-    "prettier": "latest",
+    "prettier-config-custom": "*",
     "turbo": "latest"
   },
   "engines": {

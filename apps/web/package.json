@@ -7,6 +7,7 @@
     "clean-cache": "gatsby clean",
     "dev": "gatsby develop",
     "lint": "eslint .",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json}\"",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "dependencies": {
@@ -27,6 +28,7 @@
     "dotenv": "^16.0.0",
     "eslint-config-custom": "*",
     "postcss": "^8.4.6",
-    "postcss-preset-env": "^7.3.1"
+    "postcss-preset-env": "^7.3.1",
+    "prettier-config-custom": "*"
   }
 }
